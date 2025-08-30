@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('main') {
       steps {
-        sh 'echo "This is main branch.."'
+        sh 'echo "This is main branch..-new"'
       }
     }
 
