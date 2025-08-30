@@ -1,23 +1,22 @@
 pipeline {
   agent any
   stages {
-    stage('Main') {
+    stage('main') {
       steps {
         sh 'echo "This is main branch.."'
       }
     }
 
-     stage('dev') {
+    stage('dev') {
       steps {
         sh 'echo "This is dev branch"'
       }
     }
-    stage('Main') {
+
+    stage('hotfix') {
       steps {
         sh 'echo "This is hotfix branch"'
-
+      }
+    }
   }
 }
-  }
-}
-
