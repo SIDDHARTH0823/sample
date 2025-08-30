@@ -9,7 +9,7 @@ pipeline {
 
     stage('dev') {
       steps {
-        sh 'echo "This is dev branch.."'
+        sh 'echo "This is dev branch..-new"'
       }
     }
 
