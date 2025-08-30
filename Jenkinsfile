@@ -1,17 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('Main') {
       steps {
-        build(job: 'hi', quietPeriod: 3)
+        sh 'echo "This is main branch"'
       }
     }
 
-    stage('run') {
+     stage('dev') {
       steps {
-        echo 'ok done'
+        sh 'echo "This is dev branch"'
       }
     }
+    stage('Main') {
+      steps {
+        sh 'echo "This is hotfix branch"'
 
   }
 }
